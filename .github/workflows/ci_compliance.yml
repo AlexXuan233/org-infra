@@ -28,9 +28,9 @@ jobs:
       actions: read
       id-token: write
       attestations: write
-    uses: complytime/org-infra/.github/workflows/reusable_compliance.yml@main
+    uses: AlexXuan233/org-infra/.github/workflows/reusable_compliance.yml@update-resueable-compliance
     with:
       policy_url: ${{ inputs.policy_url }}
       push_attestation: ${{ inputs.push_attestation }}
     secrets:
-      source_token: ${{ secrets.GITHUB_TOKEN }}
+      source_token: ${{ secrets.MY_GITHUB_TOKEN }}
